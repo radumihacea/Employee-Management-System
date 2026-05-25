@@ -1,59 +1,27 @@
-# AplicatieUI
+# 🏢 Employee Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
+## 📖 Overview
+This is a full-stack web application built to manage employee data efficiently. The project demonstrates the integration of a modern single-page application (SPA) with a robust backend API, handling standard CRUD (Create, Read, Update, Delete) operations for employee records. 
 
-## Development server
+## ✨ Features
+* **View Employees:** Displays a comprehensive data table of all registered employees.
+* **Add New Employees:** A dedicated form to input and save new employee details (Name, Email, Phone, Salary, Department).
+* **Edit Records:** Dynamic routing to view and update existing employee information.
+* **Responsive UI:** Styled with Bootstrap for a clean and accessible user experience.
 
-To start a local development server, run:
+## 💻 Tech Stack
 
-```bash
-ng serve
-```
+### Frontend (UI)
+* **Framework:** Angular (Modern Standalone Components approach)
+* **Key Features:** Two-Way Data Binding (`FormsModule`), Dynamic Routing (`RouterModule`), and HTTP Client integration.
+* **Styling:** HTML5, CSS3, Bootstrap 5
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Backend (API)
+* **Framework:** C# ASP.NET Core Web API
+* **Architecture:** RESTful API design pattern.
+* **Database Integration:** Entity Framework Core (Code-First approach) connected to a SQL Server database.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📂 Project Structure
+The repository is divided into two main directories:
+1. **`Aplicatie.API/`**: Contains the C# backend project, database context, migrations, and controllers.
+2. **`Aplicatie.UI/`**: Contains the Angular workspace, components, models, and services used to consume the API.
